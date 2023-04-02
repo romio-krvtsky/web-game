@@ -1,0 +1,58 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 20px 20px 20px;
+    width: 45%;
+    max-width: 1093px;
+    margin: 0 auto;
+}
+
+.rating__list-item {
+    margin-bottom: 40px;
+    font-family: "SuperGame";
+    color: black;
+}
+
+.desctiption {
+    margin-top: 2.5rem;
+    font-family: "SuperGame";
+    font-size: 40px;
+    color: black;
+}
+
+.desctiption .desctiption__team {
+    font-family: "SuperGame";
+}
+
+.rating__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.start {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    padding: 10px 0;
+    width: 140px;
+    background-color: #7C531E;
+    color: white;
+    font-size: 25px;
+    font-family: "SuperGame";
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .rating {
+        width: 75%;
+    }
+
+    .rating__list-item {
+        font-size: 20px;
+    }
+
+    .desctiption {
+        font-size: 30px;
+    }
+}

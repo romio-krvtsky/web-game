@@ -1,0 +1,73 @@
+header h1 {
+    font-size: 65px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorization {
+    display: flex;
+    font-family: "SuperGame";
+}
+
+.authorization .authorization__link-block {
+    text-align: center;
+    width: 130px;
+    margin-top: 20px;
+    padding: 4px 0 0px;
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+}
+
+.authorization__link-block:hover {
+    color: silver;
+}
+
+.authorization .authorization__link-block:first-of-type {
+    margin-right: 15px;
+}
+
+.main-content__game-link:before,
+.main-content__game-link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.main-content__game-link:before {
+    left: -27px;
+    top: .2px;
+    border-width: 27px 27px 27px 0;
+    border-color: transparent #7C531E transparent transparent;
+}
+
+.main-content__game-link:after {
+    right: -27px;
+    top: 1px;
+    border-width: 27px 0 27px 27px;
+    border-color: transparent transparent transparent #7C531E;
+}
+
+.main-content__game-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #7C531E;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    font-family: "SuperGame";
+}
+
+.main-content__game-link:hover {
+    color: black;
+    cursor: pointer;
+}

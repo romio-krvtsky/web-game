@@ -1,0 +1,135 @@
+.alias__time {
+    display: block;
+    margin: 35px 0 50px;
+    font-size: 64px;
+    text-align: center;
+    font-family: "SuperGame";
+}
+
+.alias__time::before {
+    content: "TIME: ";
+}
+
+
+.alias__game-field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alias__score-block {
+    margin-right: auto;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alias__score-block:not(:first-of-type) {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.alias__score-block .alias__score-block__text {
+    margin-bottom: 16px;
+    font-family: "SuperGame";
+    color: black;
+}
+
+.alias__score-block .alias__score-block__number {
+    text-align: center;
+    font-size: 64px;
+    font-family: "SuperGame";
+    color: black;
+}
+
+.alias__word-table {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #e89b37;
+    border-radius: 5px;
+    clip-path: polygon(
+            50% 7%,
+            77% 18%,
+            95% 50%,
+            77% 82%,
+            50% 93%,
+            23% 82%,
+            5% 50%,
+            23% 18%
+    );
+}
+
+.alias__word-table::before {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: -6%;
+    bottom: -6%;
+    right: -6%;
+    border-radius: 5px;
+    border: 3px solid #D71515;
+    transform: rotate(-22.5deg);
+}
+
+.alias__word-table:hover {
+    cursor: pointer;
+}
+
+.alias__word {
+    font-size: 64px;
+    font-family: "SuperGame";
+}
+
+
+@media screen and (max-width: 550px) {
+    .alias__game-field {
+        margin-top: 65px;
+    }
+
+    .alias__skipped-block {
+        flex-direction: row;
+        margin-top: 50px;
+        color: #000;
+    }
+
+    .alias__word-table {
+        width: 200px;
+        height: 200px;
+    }
+
+    .alias__guessed-block {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .alias__guessed-text,
+    .alias__skipped-text {
+        margin-right: 40px;
+    }
+
+    .alias__word {
+        font-size: 48px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .alias__word-table {
+        width: 150px;
+        height: 150px;
+    }
+
+    .alias__word {
+        font-size: 32px;
+    }
+}
+
+  
+  

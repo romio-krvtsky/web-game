@@ -1,0 +1,27 @@
+.rules {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1152px;
+    margin: 0 auto;
+    font-family: "SuperGame";
+    color: #000;
+}
+
+.rules__list-item {
+    margin-bottom: 40px;
+}
+
+.rules__list-item:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 920px) {
+    .rules {
+        padding: 40px 55px 100px;
+    }
+}

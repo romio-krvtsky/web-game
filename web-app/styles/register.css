@@ -1,0 +1,57 @@
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registration-form label {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: "SuperGame";
+    margin-bottom: 8px;
+}
+
+.registration-form :nth-child(5) {
+    margin-top: 20px;
+}
+
+.registration-form input {
+    padding: 10px;
+    width: 350px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.registration-form input:first-of-type {
+    margin-bottom: 15px;
+}
+
+.registration-link {
+    color: rgb(0, 0, 0);
+    font-family: "SuperGame";
+}
+
+.registration-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.registration-link-span {
+    font-family: "SuperGame";
+    color: black;
+}
+
+.registration-form input[type="submit"] {
+    display: block;
+    margin: 15px auto;
+    width: 250px;
+    background-color: #7C531E;
+    color: white;
+    font-size: 25px;
+    font-family: "SuperGame";
+}
+
+.registration-form input:not(input[type="submit"]):focus {
+    border: 3px solid #ff9211;
+}

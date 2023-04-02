@@ -1,0 +1,73 @@
+main {
+    justify-content: flex-start;
+}
+
+.settings {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings_block-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.settings_block-wrapper label {
+    font-family: "Ledger";
+    font-size: 30px;
+    color: black;
+}
+
+.settings_block-wrapper select {
+    border: 3px solid black;
+    width: 70px;
+    height: 51px;
+    background-color: gold;
+    padding: 5px 5px;
+    color: black;
+    font-size: 22px;
+}
+
+.settings_block-wrapper select:focus {
+    outline: none;
+}
+
+.settings-form input[type="checkbox"] {
+    width: 32px;
+    height: 32px;
+}
+
+.settings-form input[type="submit"] {
+    display: block;
+    margin: auto auto;
+    padding: 10px 0;
+    width: 130px;
+    background-color: #7C531E;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: "SuperGame";
+}
+
+@media screen and (max-width: 600px) {
+    .settings_block-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .settings_block-wrapper label {
+        margin-right: 0;
+        font-size: 20px;
+    }
+}
