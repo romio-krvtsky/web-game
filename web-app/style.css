@@ -7,28 +7,21 @@
 
 @font-face {
     font-family: "Josefin";
-    src: url("./fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Molle";
-    src: url("./fonts/Molle-Regular.ttf") format("truetype");
+    src: url("./fonts/Arabian Knight-Bold.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Timmana";
-    src: url("./fonts/Timmana-Regular.ttf") format("truetype");
+    src: url("./fonts/Arabian Knight-Bold.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Ledger";
-    src: url("./fonts/Ledger-Regular.ttf") format("truetype");
+    src: url("./fonts/Arabian Knight-Bold.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -45,6 +38,10 @@ html, body {
     font-size: 25px;
     line-height: 35px;
     min-height: 100vh;
+}
+
+header h1 {
+    font-size: 65px;
 }
 
 body {
@@ -134,28 +131,47 @@ footer {
     height: 55px;
 }
 
-@media screen and (max-width: 800px) {
-    header {
-        font-size: 32px;
-    }
-}
 
-@media screen and (max-width: 550px) {
+/* portrait orientation */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
     .left-arrow {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         top: 30px;
         left: 15px;
     }
 
     .right-arrow {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         top: 30px;
         right: 15px;
     }
 
-    header {
-        font-size: 20px;
+}
+
+/* landscape orientation */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    header h1{
+        font-size: 50px;
+    }
+
+    .left-arrow {
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        left: 15px;
+    }
+
+    .right-arrow {
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        right: 15px;
     }
 }

@@ -30,8 +30,20 @@ main {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 555px) {
+
+/* portrait orientation */
+@media screen and (max-width: 600px) {
     .set-content span {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+    .set-content a{
+        font-size: 40px;
+    }
+}
+
+/* landscape orientation */
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .set-content a{
+        font-size: 50px;
     }
 }

@@ -1,6 +1,4 @@
-header h1 {
-    font-size: 65px;
-}
+
 
 .main-content {
     display: flex;
@@ -71,3 +69,8 @@ header h1 {
     color: black;
     cursor: pointer;
 }
+
+
+/* portrait orientation */
+
+

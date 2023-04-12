@@ -33,3 +33,12 @@
     border-radius: 10px;
     font-family: "SuperGame";
 }
+
+
+/* portrait orientation */
+@media screen and (max-width: 600px) {
+    .results-form  .results-form__item{
+        font-size:35px;
+    }
+
+}
