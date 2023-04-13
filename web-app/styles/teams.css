@@ -71,37 +71,40 @@
 
 
 /* portrait orientation */
-/*@media screen and (max-width: 600px) {*/
-/*    .teams {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
+@media screen and (max-width: 600px) {
+    .teams {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*    .teams-field__item {*/
-/*        max-width: 340px;*/
-/*    }*/
+    .teams-field__item {
+        max-width: 340px;
+        display: flex;
+        justify-content: center;
+    }
 
-/*    .teams__left {*/
-/*        margin-right: 0px;*/
-/*    }*/
-/*}*/
+    .teams-field__item-btn img {
+        width: 40px;
+        margin-left: 150px;
+    }
 
-/*!* landscape orientation *!*/
-/*@media screen and (min-width: 601px) and (max-width: 900px) {*/
-/*    .teams {*/
-/*        justify-content: space-around;*/
-/*        align-items: center;*/
-/*    }*/
+    .teams__left {
+        margin-right: 0px;
+    }
+}
 
-/*    .teams__left {*/
-/*        margin-right: 0px;*/
-/*    }*/
+/* landscape orientation */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .teams {
+        justify-content: space-around;
+        align-items: center;
+    }
 
-/*}*/
+    .teams__left {
+        margin-right: 0px;
+    }
 
-
-
-
+}
 
 @media screen and (max-width: 690px) {
 

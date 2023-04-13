@@ -68,6 +68,12 @@ main {
 
     .settings_block-wrapper label {
         margin-right: 0;
-        font-size: 20px;
+        font-size: 30px;
     }
+
+
+    .settings_block-wrapper select{
+        width: 80px;
+    }
+
 }
