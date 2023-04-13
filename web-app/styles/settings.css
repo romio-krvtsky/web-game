@@ -29,7 +29,7 @@ main {
 
 .settings_block-wrapper select {
     border: 3px solid black;
-    width: 70px;
+    width: 60px;
     height: 51px;
     background-color: gold;
     padding: 5px 5px;
@@ -71,9 +71,15 @@ main {
         font-size: 30px;
     }
 
-
-    .settings_block-wrapper select{
+    .settings_block-wrapper select {
         width: 80px;
     }
+}
 
+
+/* landscape orientation */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .settings_block-wrapper select {
+        width: 80px;
+    }
 }

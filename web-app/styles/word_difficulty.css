@@ -33,6 +33,9 @@ main {
 
 /* portrait orientation */
 @media screen and (max-width: 600px) {
+    header h1{
+        font-size: 35px;
+    }
     .set-content span {
         margin-top: 20px;
     }

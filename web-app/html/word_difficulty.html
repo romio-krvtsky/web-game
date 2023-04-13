@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rating</title>
+    <meta name="description" content="Simple game - Alias">
+    <meta name="keywords" content="Alias">
+    <title>Word Difficulty</title>
     <link rel="stylesheet" href="../style.css"/>
-    <link rel="stylesheet" href="../styles/rating.css"/>
+    <link rel="stylesheet" href="../styles/word_difficulty.css"/>
 </head>
 
 <body>
 <header>
-    <h1>Team scores</h1>
+    <h1>Word Difficulty</h1>
+    <a href="./settings.html" class="left-arrow"><img src="../images/arrow-left-solid.svg" alt="left-arrow"></a>
 </header>
 <main>
-    <article class="rating">
-        <ul id="list" class="rating__list">
-            <li class="rating__list-item">Team 1: <span>0</span></li>
-            <li class="rating__list-item">Team 2: <span>0</span></li>
-        </ul>
+    <article class="set-content">
+        <a href="team_scores.html">Easy</a>
+        <span>apple, table</span>
     </article>
-    <div class="desctiption">
-        Get ready to play: <span class="desctiption__team">Team 2</span>
-    </div>
-    <a href='../html/alias.html' class="start">Letʼs go!</a>
+    <article class="set-content">
+        <a href="team_scores.html">Normal</a>
+        <span>underground, dalmatian</span>
+    </article>
+    <article class="set-content">
+        <a href="team_scores.html">Hard</a>
+        <span>pseudonym, flexibility</span>
+    </article>
 </main>
 <footer>
     <div class="footer-content">
@@ -37,4 +42,5 @@
     </div>
 </footer>
 </body>
+
 </html>
