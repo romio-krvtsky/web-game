@@ -42,14 +42,15 @@
     left: -27px;
     top: .2px;
     border-width: 27px 27px 27px 0;
-    border-color: transparent #7C531E transparent transparent;
+    border-color: transparent #7C531E ;
+    color: #7C531E;
 }
 
 .main-content__game-link:after {
     right: -27px;
     top: 1px;
     border-width: 27px 0 27px 27px;
-    border-color: transparent transparent transparent #7C531E;
+    border-color: transparent #7C531E;
 }
 
 .main-content__game-link {
@@ -57,7 +58,7 @@
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background: #7C531E;
+    background-color: #7C531E;
     color: white;
     text-decoration: none;
     font-size: 26px;
