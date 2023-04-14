@@ -88,38 +88,6 @@
 }
 
 
-/*@media screen and (max-width: 750px) {*/
-/*    .alias__game-field {*/
-/*        margin-top: 65px;*/
-/*    }*/
-
-/*    .alias__skipped-block {*/
-/*        flex-direction: row;*/
-/*        margin-top: 50px;*/
-/*        color: #000;*/
-/*    }*/
-
-/*    .alias__word-table {*/
-/*        width: 150px;*/
-/*        height: 150px;*/
-/*    }*/
-
-/*    .alias__guessed-block {*/
-/*        flex-direction: row;*/
-/*        margin-bottom: 50px;*/
-/*    }*/
-
-/*    .alias__guessed-text,*/
-/*    .alias__skipped-text {*/
-/*        margin-right: 40px;*/
-/*    }*/
-
-/*    .alias__word {*/
-/*        font-size: 32px;*/
-/*    }*/
-/*}*/
-
-
 @media screen and (max-width: 720px) {
     .alias__word-table {
         width: 150px;
