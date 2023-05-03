@@ -61,11 +61,13 @@
 
 .teams-field__item-btn {
     position: absolute;
+    right: calc(100% + 10px);
     margin-left: 35px;
     top: 15px;
 }
 
 .teams-field__item-btn img {
+    position: absolute;
     width: 40px;
 }
 
