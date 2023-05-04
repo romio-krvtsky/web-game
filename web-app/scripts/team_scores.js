@@ -40,4 +40,16 @@ function updateDescriptionTeam() {
 
 updateDescriptionTeam();
 
+const descriptionEl = document.querySelector('.description');
+const startLink = document.querySelector('.start');
+
+const winners = window.localStorage.getItem("winners")
+if (winners) {
+    descriptionEl.innerHTML = `WINNERS - <span class="winners">${winners}</span>`;
+    startLink.href = "../index.html";
+}
+
+
+console.log(window.localStorage.getItem("winners"));
+
 localStorage.setItem("used_words", JSON.stringify([]));

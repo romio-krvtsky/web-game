@@ -2,11 +2,11 @@ let words = JSON.parse(window.localStorage.getItem("usedWords"));
 let teamInfo = JSON.parse(window.localStorage.getItem("teamInfo"));
 const form = document.querySelector(".results-form");
 const currentTeamName = window.localStorage.getItem("currentTeamName");
-const penalty = window.localStorage.getItem("penalty");
 const skippedPoints = window.localStorage.getItem("skippedPoints");
+const pointsRequired = window.localStorage.getItem("pointRequired");
+console.log(window.localStorage.getItem("penalty"));
 
-console.log(penalty);
-console.log(skippedPoints);
+console.log(pointsRequired);
 
 words.forEach((word) => {
     const div = document.createElement("div");
@@ -47,12 +47,15 @@ function countPoints() {
     let newScore = currentScore + count;
 
 
-    if (penalty) {
+    if (window.localStorage.getItem("penalty") === "true") {
         newScore -= skippedPoints;
     }
 
     console.log(newScore);
     teamInfo[currentTeamName] = newScore;
+    if (newScore >= pointsRequired){
+        window.localStorage.setItem("winners", currentTeamName);
+    }
     localStorage.setItem("teamInfo", JSON.stringify(teamInfo));
     localStorage.setItem("skippedPoints", 0);
 }
