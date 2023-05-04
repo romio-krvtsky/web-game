@@ -27,6 +27,12 @@
     font-family: "SuperGame";
 }
 
+.winners{
+    font-family: "SuperGame";
+    color: red;
+    font-size: 60px;
+}
+
 .rating__list-item:last-child {
     margin-bottom: 0;
 }
