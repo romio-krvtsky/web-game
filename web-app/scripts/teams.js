@@ -90,5 +90,4 @@ teams.addEventListener("click", editTeamName);
 
 window.addEventListener("unload", function () {
     window.localStorage.setItem("teamsCount", count);
-
 });

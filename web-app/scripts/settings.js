@@ -11,12 +11,13 @@ form.onsubmit = (e) => {
 Round timer - ${elements.seconds.value}\n
 Skip penalty - ${elements.penalty.checked ? "ON" : "OFF"}`);
 
+    let currentTeamIndex = 0;
+    window.localStorage.setItem("currentTeamIndex", currentTeamIndex);
     window.localStorage.setItem("roundTimer", elements.seconds.value);
-    window.localStorage.setItem("penalty", elements.penalty.value);
+    window.localStorage.setItem("penalty", elements.penalty.checked);
+    window.localStorage.setItem("pointRequired", elements.words.value);
+
     window.location.href = "../html/word_difficulty.html";
 };
 
-//alert(window.localStorage.getItem("teamNames"))
-
-const teamInfo = JSON.parse(teamInfoString);
 

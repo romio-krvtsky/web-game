@@ -2,6 +2,7 @@ const teamList = document.getElementById("list");
 
 const teamInfoString = localStorage.getItem("teamInfo");
 const teamInfo = JSON.parse(teamInfoString);
+console.log(teamInfo);
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -23,15 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const descriptionTeamSpan = document.querySelector('.description__team');
-let currentTeamIndex = -1;
+let currentTeamIndex = window.localStorage.getItem("currentTeamIndex");
+
 
 function updateDescriptionTeam() {
-    currentTeamIndex++;
     if (currentTeamIndex >= Object.keys(teamInfo).length) {
         currentTeamIndex = 0;
+        localStorage.setItem("currentTeamIndex", currentTeamIndex);
     }
-    const teamName = Object.keys(teamInfo)[currentTeamIndex];
+    let teamName = Object.keys(teamInfo)[currentTeamIndex];
+    window.localStorage.setItem("currentTeamName", teamName);
+    console.log(teamName);
     descriptionTeamSpan.textContent = teamName;
 }
 
 updateDescriptionTeam();
+
+localStorage.setItem("used_words", JSON.stringify([]));
