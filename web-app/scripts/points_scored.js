@@ -8,6 +8,7 @@ console.log(window.localStorage.getItem("penalty"));
 
 console.log(pointsRequired);
 
+
 words.forEach((word) => {
     const div = document.createElement("div");
     div.classList.add("results-form__item");
@@ -53,11 +54,12 @@ function countPoints() {
 
     console.log(newScore);
     teamInfo[currentTeamName] = newScore;
-    if (newScore >= pointsRequired){
+    if (newScore >= pointsRequired) {
         window.localStorage.setItem("winners", currentTeamName);
     }
     localStorage.setItem("teamInfo", JSON.stringify(teamInfo));
     localStorage.setItem("skippedPoints", 0);
+
 }
 
 

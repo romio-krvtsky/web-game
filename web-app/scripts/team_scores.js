@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const descriptionTeamSpan = document.querySelector('.description__team');
 let currentTeamIndex = window.localStorage.getItem("currentTeamIndex");
 
-
+console.log(window.localStorage.getItem("userEmail"));
 function updateDescriptionTeam() {
     if (currentTeamIndex >= Object.keys(teamInfo).length) {
         currentTeamIndex = 0;
@@ -47,8 +47,8 @@ const winners = window.localStorage.getItem("winners")
 if (winners) {
     descriptionEl.innerHTML = `WINNERS - <span class="winners">${winners}</span>`;
     startLink.href = "../index.html";
+    localStorage.clear();
 }
-
 
 console.log(window.localStorage.getItem("winners"));
 

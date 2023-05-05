@@ -48,10 +48,10 @@ function setRandomWord() {
     aliasWord.textContent = getRandomWord();
 }
 
-
 let guessedPoints = 0;
 let skippedPoints = 0;
 
+setRandomWord();
 
 document.getElementById("left-arrow").addEventListener("click", () => {
     guessedWords.textContent = `${+guessedWords.textContent + 1}`;

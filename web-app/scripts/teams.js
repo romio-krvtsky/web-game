@@ -57,21 +57,8 @@ function editTeamName(e) {
     }
 }
 
-const teamNames = [];
-
-function saveTeams() {
-    const teamNameSpans = document.querySelectorAll(".teams-field__item span");
-    teamNameSpans.forEach(team => {
-            const teamName = team.innerText.trim();
-            teamNames.push(teamName);
-        }
-    );
-    window.localStorage.setItem("teamNames", teamNames);
-}
-
 const teamInfo = {};
 function saveTeamInfo() {
-
     const teamNameSpans = document.querySelectorAll(".teams-field__item span");
 
     teamNameSpans.forEach(team => {
