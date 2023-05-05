@@ -26,6 +26,11 @@
     margin-right: 15px;
 }
 
+#sign_out_bnt {
+    display: none;
+}
+
+
 .main-content__game-link:before,
 .main-content__game-link:after {
     content: "";
