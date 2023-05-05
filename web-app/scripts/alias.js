@@ -1,5 +1,5 @@
-// let amountSeconds = parseInt(localStorage.getItem("roundTimer"));
-let amountSeconds = 5;
+let amountSeconds = parseInt(localStorage.getItem("roundTimer"));
+//let amountSeconds = 5;
 const timer = document.getElementById("timer");
 
 
